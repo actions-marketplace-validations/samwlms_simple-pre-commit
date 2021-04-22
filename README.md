@@ -1,4 +1,4 @@
-# blacktion
+# ArgBlack
 GitHub Action for formatting python code using [black](https://github.com/psf/black)
 
 
@@ -17,10 +17,10 @@ None
 ## Example usage
 
 ```yaml
-uses: samwlms/backtion@master
+uses: samwlms/argblack@master
 
 # or specify a path!
-uses: samwlms/backtion@master
+uses: samwlms/argblack@master
 with:
   black-args: '--exclude some_dir --check --diff .'
 ```
