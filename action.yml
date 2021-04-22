@@ -1,14 +1,14 @@
 # action.yml
-name: 'Django Black'
-description: 'GitHub action to run black on your python repository (excluding migrations)'
+name: 'blacktion'
+description: 'GitHub action to run black on your python repository'
 branding:
   icon: 'check-square'
   color: 'black'
 inputs:
-  path:
-    description: 'File or directory to run black on'
+  black-args:
+    description: 'arguments to run'
     required: false
-    default: '.'
+    default: '--check .'
 outputs:
   output:
     description: 'The output of black'
@@ -16,4 +16,4 @@ runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
-    - ${{ inputs.path }}
+    - ${{ inputs.black-args }}
