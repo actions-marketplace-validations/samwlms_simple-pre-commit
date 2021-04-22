@@ -1,12 +1,12 @@
-# black-check
-GitHub Action for [black](https://github.com/psf/black)
+# blacktion
+GitHub Action for formatting python code using [black](https://github.com/psf/black)
 
 
 ## Inputs
 
-### `path`
+### `black-args`
 
-**Optional** The path to run black on
+**Optional** The command line args that map to [black documentation](https://black.readthedocs.io/en/stable/installation_and_usage.html#command-line-options)
 
 **Default** `"."`
 
@@ -17,10 +17,10 @@ None
 ## Example usage
 
 ```yaml
-uses: jpetrucciani/black-check@master
+uses: samwlms/backtion@master
 
 # or specify a path!
-uses: jpetrucciani/black-check@master
+uses: samwlms/backtion@master
 with:
-  path: '.'
+  black-args: '--exclude some_dir --check --diff .'
 ```
