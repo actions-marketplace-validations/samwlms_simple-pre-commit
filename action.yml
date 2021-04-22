@@ -1,5 +1,5 @@
 # action.yml
-name: 'blaction'
+name: 'argblack'
 description: 'GitHub action to run black on your python repository'
 branding:
   icon: 'check-square'
