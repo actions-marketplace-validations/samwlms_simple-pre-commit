@@ -2,4 +2,4 @@
 set -eax
 
 black --version
-black --check "$@"
+black --check --force-exclude '^.*\b(migrations)\b.*$' "$@"
