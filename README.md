@@ -1,6 +1,8 @@
 # ArgBlack
-GitHub Action for formatting python code using [black](https://github.com/psf/black)
+**GitHub Action for formatting python code using [black](https://github.com/psf/black)**
 
+Forked from [jpetrucciani's 'black check'](https://github.com/jpetrucciani/black-check)
+*(with some minor changes to allow pass-through of black CLI args)*
 
 ## Inputs
 
