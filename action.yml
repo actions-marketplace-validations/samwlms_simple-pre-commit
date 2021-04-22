@@ -1,6 +1,6 @@
 # action.yml
-name: 'Black Check'
-description: 'GitHub action to run black on your python repository'
+name: 'Django Black'
+description: 'GitHub action to run black on your python repository (excluding migrations)'
 branding:
   icon: 'check-square'
   color: 'black'
