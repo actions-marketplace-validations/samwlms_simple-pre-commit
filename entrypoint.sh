@@ -5,6 +5,7 @@ black --version
 
 # grab the info stored in the pre-commit-config file
 revision=$(grep 'repos:' .pre-commit-config.yaml)
-revision=${db//*rev: /}
+grep_hooks = $(grep 'hooks:' revision)
+hooks_var=${revision//*hooks: /}
 
 black $@
