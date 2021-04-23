@@ -2,5 +2,5 @@
 set -eax
 
 black --version
-echo ls
+ls
 black $@
