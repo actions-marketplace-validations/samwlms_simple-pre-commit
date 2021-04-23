@@ -1,8 +1,7 @@
 #!/bin/sh
 set -eax
 
-git init
-pre-commit install
+pre-commit install --install-hooks
 pre-commit run --all-files
 
 # grab the info stored in the pre-commit-config file
