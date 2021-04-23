@@ -4,9 +4,11 @@ set -eax
 black --version
 
 # grab the info stored in the pre-commit-config file
-language_version=$(grep 'language_version:' .pre-commit-config.yaml | tr -d 'language_version:')
+prefix='language_version:'
+language_version=$(grep 'language_version:' .pre-commit-config.yaml)
+output=${language_version#"$prefix"}
 
-echo $language_version
+echo $output
 
 
 black $@
