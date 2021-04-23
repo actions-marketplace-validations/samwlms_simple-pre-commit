@@ -1,4 +1,4 @@
-FROM python:3.8.5-alpine
+FROM python:3.9-slim-buster
 RUN apt-get -y update
 RUN apt-get -y install git
 
