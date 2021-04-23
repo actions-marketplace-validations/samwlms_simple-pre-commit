@@ -1,7 +1,7 @@
 #!/bin/sh
 set -eax
 
-black --version
+git init
 pre-commit install
 pre-commit run --all-files
 
