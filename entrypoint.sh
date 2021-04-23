@@ -1,7 +1,8 @@
 #!/bin/sh
 set -eax
 
-pre-commit install --install-hooks
+git init
+pre-commit install
 pre-commit run --all-files
 
 # grab the info stored in the pre-commit-config file
@@ -12,4 +13,4 @@ pre-commit run --all-files
 
 
 
-#black $@
+black --check .
