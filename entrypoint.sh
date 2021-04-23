@@ -9,6 +9,8 @@ black --version
 prefix="language_version:"
 # grab the line with pattern match for prefix var
 language_version=$(grep $prefix .pre-commit-config.yaml)
+# remove the leading whitespace
+language_version=$language_version | sed -e 's/^[ \t]*//'
 # trim prefix from line
 language_version=${language_version#"$prefix"} 
 
