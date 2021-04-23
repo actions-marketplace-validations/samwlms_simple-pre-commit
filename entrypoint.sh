@@ -2,13 +2,13 @@
 set -eax
 
 # create/ reinitialise git repo
-git init
+# git init
 
 # uninstall existing hooks
-pre-commit uninstall
+# pre-commit uninstall
 
 # install hooks based on current configuration file
-pre-commit install -f
+pre-commit install --install-hooks -f
 
 # run pre-commit
 pre-commit run --all-files --verbose
