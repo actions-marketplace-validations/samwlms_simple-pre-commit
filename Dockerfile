@@ -1,4 +1,6 @@
 FROM python:3.8.5-alpine
+RUN apt-get -y update
+RUN apt-get -y install git
 
 LABEL "maintainer"="Sam Williams <swilliams.it@outlook.com>"
 
