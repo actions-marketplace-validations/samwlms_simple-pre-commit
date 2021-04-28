@@ -1,19 +1,9 @@
 # action.yml
-name: 'argblack'
-description: 'GitHub action to run black on your python repository'
+name: 'simple-pre-commit'
+description: 'GitHub action to run pre-commit on your python repository (using existing .pre-commit-config.yaml file'
 branding:
   icon: 'check-square'
   color: 'black'
-inputs:
-  black-args:
-    description: 'arguments to run'
-    required: false
-    default: '--check .'
-outputs:
-  output:
-    description: 'The output of black'
 runs:
   using: 'docker'
   image: 'Dockerfile'
-  args:
-    - ${{ inputs.black-args }}
