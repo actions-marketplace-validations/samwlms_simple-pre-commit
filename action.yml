@@ -1,6 +1,6 @@
 # action.yml
 name: 'simple-pre-commit'
-description: 'GitHub action to run pre-commit on your python repository (using existing .pre-commit-config.yaml file'
+description: 'GitHub action to run pre-commit on your python repository (using existing .pre-commit-config.yaml file)'
 branding:
   icon: 'check-square'
   color: 'black'
