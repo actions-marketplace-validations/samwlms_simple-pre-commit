@@ -12,7 +12,7 @@ RUN apk add gcc musl-dev git
 
 RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
-RUN python --version ; pip --version ; pytest --version
+RUN python --version ; pip --version
 
 
 ENTRYPOINT ["/entrypoint.sh"]
